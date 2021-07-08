@@ -4,7 +4,7 @@ on:
   watch:
     types: [started]
   schedule:
-    - cron: "0 22 * * *"
+    - cron: "0 7,22 * * *"
     
    
 jobs:
@@ -22,7 +22,7 @@ jobs:
     - name: Checkout flexget_qbittorrent_mod repo
       uses: actions/checkout@v2
       with:
-        repository: lhllhx/flexget_qbittorrent_mod
+        repository: madwind/flexget_qbittorrent_mod
         path: .flexget/plugins
     
     - name: Setup timezone
